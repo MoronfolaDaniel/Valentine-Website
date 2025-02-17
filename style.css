@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/bkg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Georgia', serif;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* White box with slight transparency */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Pink color for the heading */
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff1493;
+}
+
+.submit-btn {
+    background-color: #1e272e;
+    color: #ff1493;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    box-shadow: 0 0 10px #485460, 0 0 20px #485460, 0 0 30px #485460;
+    transform: scale(1.05);
+}
+
+.submit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.submit {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.submit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.submit-header h2 {
+    color: #1e272e;
+    margin: 0;
+}
+
+.close-submit-btn {
+    background-color: transparent;
+    border: none;
+    color: #1e272e;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-submit-btn:hover {
+    color: #ff1493;
+}
+
+.submit-content {
+    color: #1e272e;
+    font-size: 1.2rem;
+}

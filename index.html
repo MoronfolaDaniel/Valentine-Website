@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dearest Aduke</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>For My Dearest <span id="name">Aduke</span></h1>
+        <p>
+            I know Valentine’s Day is over, but my love and admiration for you never have an expiry date. 
+            You light up my world in ways words can’t describe. 💖
+        </p>
+        <p>So, will you still be my (belated) Valentine? 😊</p>
+        <button class="submit-btn" onclick="showPopup()">Yes</button>
+
+        <!-- Pop-up structure -->
+        <div class="submit-overlay" id="submit-overlay">
+            <div class="submit">
+                <div class="submit-header">
+                    <h2>Yay!</h2>
+                    <button class="close-submit-btn" onclick="hidePopup()">&times;</button>
+                </div>
+                <div class="submit-content">
+                    <p>I knew you would say yes! 💖</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the pop-up
+        function showPopup() {
+            document.getElementById('submit-overlay').style.opacity = '1';
+            document.getElementById('submit-overlay').style.visibility = 'visible';
+        }
+
+        // Function to hide the pop-up
+        function hidePopup() {
+            document.getElementById('submit-overlay').style.opacity = '0';
+            document.getElementById('submit-overlay').style.visibility = 'hidden';
+        }
+
+        // Optional: Dynamically update the name
+        const name = "Aduke"; // Replace with the actual name
+        document.getElementById('name').textContent = name;
+    </script>
+</body>
+</html>
